@@ -1,0 +1,50 @@
+.header {
+    width: 100%;
+}
+
+.header h1 {
+    font-size: medium;
+}
+
+.content {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    padding: 1rem 0;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex>*+* {
+    margin-left: 1.25rem;
+}
+
+.logo {
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+.navMenu {
+    display: flex;
+}
+
+.navMenu>*+* {
+    margin-left: 0.25rem;
+}
+
+.btn {
+    padding: 0.125rem 1rem;
+    background-color: transparent;
+    font-size: small;
+}
+.btn:hover {
+    font-weight: 700;
+    cursor: pointer;
+}

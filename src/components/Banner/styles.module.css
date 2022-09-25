@@ -1,0 +1,19 @@
+.content {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.explore {
+    width: 50%;
+}
+
+.explore h2 {
+    font-size: xxx-large;
+    font-weight: 800;
+    margin: 0;
+}
