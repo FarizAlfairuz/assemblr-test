@@ -1,0 +1,36 @@
+.featured {
+    display: flex;
+    /* background-color: aquamarine; */
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.featured h3 {
+    font-size: medium;
+    transform: rotate(-180deg);
+    writing-mode: vertical-rl;
+    margin: 0;
+}
+
+.featured li {
+    list-style: none;
+    width: 5rem;
+    height: 5rem;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex>*+* {
+    margin-left: 1rem;
+}

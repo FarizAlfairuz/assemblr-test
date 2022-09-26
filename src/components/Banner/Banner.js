@@ -1,4 +1,8 @@
-import React from "react";
+import React, { Suspense } from "react";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
+import Model1 from "../Models/Model1";
+
 import styles from "./styles.module.css";
 
 const Banner = () => {
@@ -10,9 +14,19 @@ const Banner = () => {
           Choose from a wide range of well-creafted premium quality wooden
           furniture online
         </p>
-        <button>Explore</button>
+        <button className={styles.btn}>EXPLORE</button>
       </div>
-      <div>3d assets</div>
+
+      <div className={styles.canvas}>
+        <Canvas shadows camera={{ position: [4, 2, 3] }}>
+          <OrbitControls enableZoom={false} />
+          <ambientLight intensity={1} />
+          <directionalLight position={[-2, 5, 2]} intensity={1} castShadow />
+          <Suspense fallback={null}>
+            <Model1 />
+          </Suspense>
+        </Canvas>
+      </div>
     </div>
   );
 };
